@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- 
+  Created by: Harry Prentice
+  Date: 22/09/17
+-->
+<html>
+    <head>
+        <title>TO-DO List</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=ABeeZee">
+
+        <link rel="stylesheet" href="style.css"/>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-12">
+                <h2>To-Do List:</h2>
+            </div>
+        </div>
+        
+        <div class="row" id="content">
+            <div class="col-6" id="form">
+                Task: <input type="text" name="fname" id="text" maxlength="25">
+                <button id="btn" style="font-family: 'ABeeZee', serif;">Add</button>
+
+                <p class="message">25 Character Limit.</p>
+                <p id="warning"></p>
+            </div>
+            
+            <div class="col-6" id="list-box">
+                <ul id="list"></ul>
+                
+                <p id="messageComplete"></p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
